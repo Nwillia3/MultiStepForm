@@ -37,6 +37,7 @@ class FormUserDetails extends Component {
             onChange={handleChange("email")}
             defaultValue={values.email}
           />
+          <br />
           <RaisedButton
             label="continue"
             primary={true}

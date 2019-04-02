@@ -42,12 +42,14 @@ class FormPersonalDetails extends Component {
             onChange={handleChange("bio")}
             defaultValue={values.bio}
           />
+          <br />
           <RaisedButton
             label="continue"
             primary={true}
             style={styles.button}
             onClick={this.continue}
           />
+
           <RaisedButton
             label="back"
             primary={false}

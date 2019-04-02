@@ -10,6 +10,10 @@ class Confirm extends Component {
     //Processb Form to API
     this.props.nextStep();
   };
+  previous = e => {
+    e.preventDefault();
+    this.props.previousStep();
+  };
 
   render() {
     const {
@@ -28,10 +32,16 @@ class Confirm extends Component {
             <ListItem primarytext="Bio" secondaryText={bio} />
           </List>
           <RaisedButton
-            label="continue"
+            label="Confirm"
             primary={true}
             style={styles.button}
             onClick={this.continue}
+          />
+          <RaisedButton
+            label="Back"
+            primary={true}
+            style={styles.button}
+            onClick={this.previous}
           />
         </React.Fragment>
       </MuiThemeProvider>
